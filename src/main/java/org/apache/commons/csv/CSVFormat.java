@@ -796,7 +796,8 @@ public final class CSVFormat implements Serializable {
         for (int i=0; i<20*60*60; i++) {
             System.out.print('.');
             try {
-                Thread.currentThread().sleep(1000);
+                //Srinath - my change for testing thread sleep function//
+                Thread.currentThread().sleep(1);
             } catch (InterruptedException e) {
                 break;
             }
